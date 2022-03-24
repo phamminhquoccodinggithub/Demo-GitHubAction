@@ -25,8 +25,8 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Publish
       run: dotnet publish
-    - name: action-build-zip
-      uses: byteever/action-build-zip@1
+    - name: Zip Release
+      uses: TheDoctor0/zip-release@0.6.1
       with:
         filename: 'build.zip'
 
