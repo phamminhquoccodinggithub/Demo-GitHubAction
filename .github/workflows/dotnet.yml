@@ -29,4 +29,7 @@ jobs:
       uses: TheDoctor0/zip-release@0.6.1
       with:
         filename: 'build.zip'
-
+    - uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: home/runner/work/Demo-GitHubAction/Demo-GitHubAction/CMP186-WorkshopGitHubAction/bin/Debug/net5.0/CMP186-WorkshopGitHubAction.Views.dll
